@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="container" id="container">
+    <div class="form" id="pageLogin">
+        <div class="textLogin">FAKE LOGIN</div> <br>
+            <input type="text" placeholder ="username" id="usernameInput"> <br>
+            <input type="password" placeholder="password" id="passwordInput"> <br>
+            <button onclick="onLogin()" id="loginButton">Login</button> <br> <br>
+            <p class="textBawah">don't have an account? <a href="#" class="link" onclick="daftar('daftar')">Sign Up Here!</a></p>
+    </div>
+    <div class="form" id="pageReg">
+        <div class="textReg">daftar dulu cuy...</div> <br>
+            <input type="text" placeholder="username" id="usernameRegister"> <br>
+            <input type="password" placeholder="password" id="passwordRegister"> <br>
+            <input type="password" placeholder="repeat password" id="passwordRegister"> <br>
+            <button onclick="onRegister()" id="buttonRegister">Sign up</button> <br><br>
+            <p class="textBawah">already have an account? <a href="#" class="link" onclick="daftar('masuk')">Login Here!</a></p>
+    </div>
+    <div class="form" id="box">
+        <div class="textBox">
+        <p>Haloo.. <b id="name"></b>!</p>
+        <p>Makasih udah Login yaa...</p>
+        </div>
+        <button onclick="onLogout()" id="logoutButton">Sign out</button>
+    </div>
+
+</section>
+    
+    <script src="main.js"></script>
+</body>
+</html>
